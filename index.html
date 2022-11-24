@@ -15,19 +15,32 @@
             background-size: 100%;
 
                
-        }
-
+        }    
         nav{
-            background-color:rgb(243, 236, 174);
-            border: 2px solid red;
-            list-style-position:inside;
+            background-color: rgb(243, 238, 196);
+            border: 3px;
+            border-color: red;
+            border-style: solid;
+            border-radius: 10px;
+        }
+        ul.nav{
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav li{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        ul.nav li a{
+            float: left; 
         }
 
         h1{
             text-align: center;
             color: white;
             font-family:monospace
-
         }
 
         .curiosidades{
@@ -36,7 +49,7 @@
             list-style-position: inside;
         }
        
-        a:hover {
+        ul.nav a:hover {
             color: red;
         }
         b{
@@ -46,30 +59,35 @@
             color: khaki;
             text-align: center;
         }
-
+        img{
+            max-width: 100%;
+        }
+        
+    
     </style>
 </head>
 <body>
-    <div class="main">
+    <main>
+        
 
         <div class="cabeçalho">
             <h1>Página Inicial - Cinema</h1>
             <h1><img src="img/cinema2.png" alt ="cinema" width = "350" height="350"></h1>
         </div>  
-        
-        
+            
+            
         <nav>
-            <ol style="list-style-type: decimal;">
-            <li><a href = "https://polystefane.github.io/pagina-de-salas/">Salas</a></li>
-            <li><a href = "https://polystefane.github.io/pagina-de-filmes/">Filmes</a></li>
-            <li><a href = "https://polystefane.github.io/pagina-de-sessoes/">Sessões</a></li>
-            <li><a href = "https://polystefane.github.io/relatorios-cinema/">Relatórios</a></li>
-            <li><button>Sair</button></li>
-            </ol>
+            <ul class="nav">
+            <li><a href = "site aqui">Salas</a></li>
+            <li><a href = "site aqui">Filmes</a></li>
+            <li><a href = "site aqui">Sessões</a></li>
+            <li><a href = "site aqui">Relatórios</a></li>
+            <li><a href = "site aqui">Sair</a></li>
+            </ul>
         </nav>
-        
+            
         <h1>Curiosidades sobre o cinema:</h1>
-        
+            
         <div class="curiosidades">
             <img src="img/cinema1.png" alt="fita de filme" width="500" height="300">
             <ul class="lista_curiosidades">
@@ -84,10 +102,10 @@
                 <li>Sean Connery usou peruca em todos os filmes do <b>James Bond</b> que ele participou.</li>
             </ul>
         </div>
-    </div>
 
-    <footer>
-        <i>Desenvolvido por Polyane Stefane e Bianca Carvalio</i>
-    </footer>
+        <footer>
+            <i>Desenvolvido por Polyane Stefane e Bianca Carvalio</i>
+        </footer>
+    </main>
 </body>
 </html>
